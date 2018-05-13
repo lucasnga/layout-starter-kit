@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node_modules/.bin/node-sass --include-path source/scss source/scss/main.scss build/main.css",
-    "watch-css": "node_modules/.bin/nodemon -e scss -x \"npm run build-css\"",
+    "build": "node_modules/.bin/node-sass --include-path src/scss src/scss/main.scss build/main.css",
     "watch-project": "node_modules/.bin/nodemon -e scss,html  -x \"node index.js\""
   },
   "author": "",

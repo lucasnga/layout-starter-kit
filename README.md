@@ -4,23 +4,25 @@
 
 In order to preview a project, it is necessary to have:
  - Node.js - [[Node.js](https://nodejs.org)]
+ - Yarn - [[Yarn](https://github.com/yarnpkg/yarn)]
 
 ### Installation
 
 ```sh
+npm install -g yarn
 cd /decompressed/project/folder/
-npm install
+yarn
 ```
 
 After installation of dependencies:
 
 ```sh
-npm run watch-project
+yarn watch-project
 ```
 
 Next after running a project text will appear in console:
 ```sh
-[nodemon] starting `node index.js`
+	Server started -> open url in browser http://localhost:3000
 ```
 
 Open an URL address in browser:
