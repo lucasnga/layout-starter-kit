@@ -17,6 +17,8 @@ app.use(
 );
 
 app.use('/', express.static(path.join(__dirname, 'src')));
+app.use('/css', express.static(path.join(__dirname, 'dst/css')));
+app.use(express.static(path.join(__dirname, 'assets')));
 
 assets.forEach(directory => {
 	app.use(directory, express.static(path.join(__dirname, `${directory}`)));
